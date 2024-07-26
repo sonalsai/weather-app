@@ -18,7 +18,7 @@ function Index() {
   }
 
   const getData = () => {
-    axios.get(`http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${locationName}`)
+    axios.get(`https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${locationName}`)
       .then((response) => {
         const result = response.data;
         setLocationName("")
