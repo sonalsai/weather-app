@@ -17,7 +17,8 @@ function WeatherDisplay({ locationName, tempratureC, data }) {
         <span className="pressure"><label htmlFor="pressure">Pressure &#58; </label> {data.current.pressure_in} inHg°</span>
         <div className="condition">
           <label htmlFor="condition">Weather Condition &#58; </label>
-          <span> {data.current.condition.text} <img src={Icon} alt="Weather data by WeatherAPI.com" border="0" /></span>
+          <span> {data.current.condition.text} 
+          </span>
           
         </div>
       </div>
