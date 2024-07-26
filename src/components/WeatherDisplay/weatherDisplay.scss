@@ -1,0 +1,78 @@
+@import "../../styles/variables";
+
+.weatherDataContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 748px;
+    height: 600px;
+    gap: 18px;
+    width: 100%;
+    align-items: center;
+    padding: 42px 0;
+}
+
+.locationName {
+    max-width: max-content;
+    text-align: center;
+    font-family: $font;
+    font-size: 48px;
+    font-weight: 400;
+    text-transform: uppercase;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+
+.region {
+    font-family: $font;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.weatherDetails{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+    align-items: flex-start;
+    span {
+        font-family: "Poppins";
+        font-size: 20px;
+        font-weight: 400;
+        text-align: center;
+    
+        label {
+            font-family: $font;
+            font-size: 22px;
+            font-weight: 600;
+            text-transform: capitalize;
+        }
+    }
+}
+
+.condition{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+
+    label{
+        font-family: $font;
+            font-size: 22px;
+            font-weight: 600;
+            text-transform: capitalize;
+    }
+
+    span{
+        display: flex;
+        font-family: "Poppins";
+        font-size: 20px;
+        font-weight: 400;
+        text-align: center;
+        align-items: center;
+
+        img{
+            padding: 0;
+        }
+    }
+}
