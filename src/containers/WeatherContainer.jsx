@@ -39,7 +39,7 @@ function WeatherContainer() {
           locationName={locationName}
           getData={getData}
         />
-        {loading && <div className="loading">Loading...</div>}
+        {loading && <div className="loading"></div>}
         {errorMsg && <div className="errorDisplay"><span className='errorMessage'>Not Found</span></div>}
         {data && <WeatherDisplay data={data} />}
       </div>
