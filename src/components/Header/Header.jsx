@@ -1,7 +1,6 @@
-/* eslint-disable no-unused-vars */
-import React from 'react'
 import Logo from "../../assets/images/appLogo.svg";
-import "./header.scss"
+import "./header.scss";
+
 function Header() {
   return (
     <div className='navBar'>
@@ -10,10 +9,9 @@ function Header() {
             <h2>Weather App</h2>
         </div>
         <div className="rightSide">
-      
         </div>
     </div>
   )
 }
 
-export default Header
+export default Header;

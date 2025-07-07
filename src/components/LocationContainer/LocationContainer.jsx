@@ -1,16 +1,20 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable no-unused-vars */
-import React from 'react'
-import "./locationContainer.scss"
+import PropTypes from 'prop-types';
+import "./locationContainer.scss";
 
 function LocationContainer({ getData, handleLocation, locationName }) {
     return (
         <div className='locationContainer'>
             <label htmlFor="locationInput">Enter The Location </label>
-            <input type="text" name="locationInput" id="locationInput" value={locationName} onChange={(e) => handleLocation(e)} />
-            <button className="checkBtn" onClick={() => getData()}>Check</button>
+            <input type="text" name="locationInput" id="locationInput" value={locationName} onChange={handleLocation} />
+            <button className="checkBtn" onClick={getData}>Check</button>
         </div>
     )
 }
 
-export default LocationContainer
+LocationContainer.propTypes = {
+    getData: PropTypes.func.isRequired,
+    handleLocation: PropTypes.func.isRequired,
+    locationName: PropTypes.string.isRequired,
+};
+
+export default LocationContainer;
